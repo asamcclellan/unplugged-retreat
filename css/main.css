@@ -92,6 +92,7 @@ header, footer{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: column wrap;
 }
 
 /***** Header Styles *****/
@@ -104,15 +105,26 @@ header .content-wrapper{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: column wrap;
+  width: 60%;
+  padding: 15px 70px;
+  margin: 0;
+}
+
+.header-divider{
+  width: 100%;
+  border: 1px solid grey;
 }
 
 header nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
+  width: 45%%
 }
 
-header ul{
+header nav ul{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -124,10 +136,21 @@ footer{
 
 }
 
+footer .content-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55%;
+}
+
 footer .social-icons{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+footer p{
+  margin: 0;
 }
 
 footer .social p{
@@ -142,63 +165,81 @@ footer .social p{
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 20px;
 }
 
 aside{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
+  padding: 30px 20px;
 }
 
 .features{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+}
+
+.features p{
+  margin: 0;
 }
 
 .features .features-items{
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
+  padding: 50px 20px;
+}
+
+.features article{
+  width: 45%;
 }
 
 .reviews{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: column wrap;
+  padding: 50px 20px;
 }
+
+.reviews h3{
+  width: 92%;
+}
+
+
+/***** About Styles *****/
 
 .mission{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
 }
 
 .contact-section{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
 }
+
+/***** FAQ Styles *****/
 
 .faq{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
 }
 
 .faq .content-wrapper{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
 }
-/***** About Styles *****/
-
-
-
-/***** FAQ Styles *****/
-
-
 
 /* ==========================================================================
    Helper classes
