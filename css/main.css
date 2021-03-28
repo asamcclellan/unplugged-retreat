@@ -13,14 +13,7 @@
 
 html {
   color: #222;
-  font-size: 1em;
   line-height: 1.4;
-  height: 100%;
-}
-
-body{
-  height: 100%;
-  font-size: 1rem;
 }
 
 /*
@@ -92,6 +85,59 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/***** General Styles *****/
+
+html{
+  font-size: 16px;
+  height: 100%;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  height: 100%;
+}
+
+ul, ol{
+  list-style-type: none;
+}
+
+a{
+  color: #e2e3ed;
+  text-decoration: none;
+}
+
+h1{
+  font-size: 3em;
+}
+
+h2{
+  font-family: 'Poppins', sans-serif;
+  font-size: 2em;
+}
+
+h3, h4{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5em;
+}
+
+p{
+
+}
+
+img{
+
+}
+
+figure{
+
+}
+
+address{
+  font-style: normal;
+  line-height: .25em;
+}
+
 .content-wrapper{
   width: 90%;
   margin: 50px 0;
@@ -141,7 +187,6 @@ header nav ul{
   display: flex;
   justify-content: space-around;
   width: 100%;
-  list-style-type: none;
 }
 
 header a{
@@ -179,11 +224,6 @@ footer .social-icons{
 footer a{
   margin: 0 10px;
 }
-
-footer p{
-  margin: 0;
-}
-
 
 /***** Homepage Styles *****/
 
@@ -224,7 +264,7 @@ input{
 .features .features-items{
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-flow: row wrap;
   padding-left: 30px;
 }
@@ -370,10 +410,6 @@ input{
 
 /***** Tablet Styles *****/
 @media only screen and (min-width: 768px) {
-  body{
-    background-color: lightyellow;
-  }
-
   header .content-wrapper{
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -473,10 +509,6 @@ input{
 
 /***** Desktop Styles *****/
 @media only screen and (min-width: 1200px){
-  body{
-    background-color: lightblue;
-  }
-
   header .content-wrapper{
     width: 100%;
   }
