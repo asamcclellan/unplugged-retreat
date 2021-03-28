@@ -133,10 +133,8 @@ header img{
 
 header nav {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-flow: row wrap;
-  width: 45%;
+  justify-content: center;
+  width: 30%;
 }
 
 header nav ul{
@@ -200,10 +198,11 @@ aside .content-wrapper{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding: 0 30px;
 }
 
 aside .form-description{
-  padding: 0px 30px;
+  padding-left: 30px;
 }
 
 aside input{
@@ -227,7 +226,7 @@ input{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  padding: 0 30px;
+  padding-left: 30px;
 }
 
 .features article{
@@ -243,7 +242,6 @@ input{
 }
 
 .reviews h3{
-  width: 92%;
 }
 
 
@@ -379,6 +377,7 @@ input{
   header .content-wrapper{
     flex-flow: row nowrap;
     justify-content: space-between;
+    width: 100%;
   }
 
   .header-divider{
@@ -457,13 +456,13 @@ input{
 
   .footer-content{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
     flex-flow: row nowrap;
   }
 
   .footer-content .contact{
-    width: 50%;
+    width: 100%;
     margin-right: 80px;
   }
 
@@ -478,12 +477,17 @@ input{
     background-color: lightblue;
   }
 
+  header .content-wrapper{
+    width: 100%;
+  }
+
   .features .features-items{
-    flex-flow: column wrap;
+
   }
 
   .features article{
-    width: 45%;
+    width: 30%;
+    padding: 0 15px;
   }
 }
 
