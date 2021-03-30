@@ -169,8 +169,7 @@ header .content-wrapper{
   align-items: center;
   flex-flow: row wrap;
   width: 60%;
-  padding: 15px 70px;
-  margin: 0;
+  padding: 15px 60px;
 }
 
 header img{
@@ -192,18 +191,20 @@ header figure{
 .header-divider{
   width: 100%;
   border: 1px solid grey;
+  margin-top: .5em;
 }
 
 header nav {
   display: flex;
   justify-content: center;
-  width: 30%;
+  width: 100%;
 }
 
 header nav ul{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   width: 100%;
+  padding: 0;
 }
 
 header a{
@@ -228,16 +229,22 @@ footer .content-wrapper{
 footer .contact{
   text-align: center;
   color: white;
+  width: 100%;
 }
 
 footer .social{
   text-align: center;
+  width: 100%;
 }
 
 footer .social-icons{
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.social h3{
+  margin-bottom: 0;
 }
 
 .social-icons i{
@@ -258,10 +265,16 @@ footer a{
 .hero-area{
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   background: url(../img/splash.jpg) center no-repeat;
   background-size: cover;
   flex-flow: row wrap;
+  min-height: 31.25em;
+}
+
+.hero-area h1{
+  font-weight: 400;
+  font-size: 2.25em;
 }
 
 aside{
@@ -270,18 +283,23 @@ aside{
 
 aside .content-wrapper{
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-flow: row wrap;
-  padding: 50px 0px;
+  padding: 10px 0px 10px 30px;
 }
 
-aside .form-description{
-  padding-left: 40px;
+aside h2, h3{
+  font-weight: 500;
 }
 
 aside p{
   color: white;
+}
+
+aside .form{
+  width: 100%;
+  padding-right: 50px;
 }
 
 aside input{
@@ -400,16 +418,25 @@ input[type=button] {
 
 .contact-section{
   background-color: rgb(42,66,58);
-
 }
 
 .contact-section .content-wrapper{
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  flex-flow: column wrap;
-  margin: 0px 0px 0px 50px;
+  flex-flow: row wrap;
+  margin: 0px 0px 0px 30px;
   padding: 100px 0px 100px 0px;
+}
+
+.contact-section h1{
+  margin: 0 0;
+  font-weight: 700;
+  font-size: 3em;
+}
+
+.contact-section h2{
+  font-weight: 400;
 }
 
 .contact-section address{
@@ -554,6 +581,7 @@ input[type=button] {
 
   .features .features-items{
     flex-flow: row wrap;
+    padding-left: 40px;
   }
 
   .features article{
@@ -623,6 +651,10 @@ input[type=button] {
     width: 50%;
   }
 
+  footer{
+    min-height: 430px;
+  }
+
   .footer-content{
     display: flex;
     justify-content: space-between;
@@ -646,8 +678,8 @@ input[type=button] {
     width: 100%;
   }
 
-  .features .features-items{
-
+  aside .form-description{
+    margin-left: 50px;
   }
 
   .features article{
